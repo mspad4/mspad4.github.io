@@ -68,7 +68,14 @@
 
 <div style="list-style-type: none; margin: 0; padding: 0; background-color: #474747; height: 5vh;" class="col-md-12 nav">
 
-    <div class="dropdown">
+    <script>
+        function dispMenu(theid) {
+            document.getElementById(theid).display = "block"
+        }
+    </script>
+
+    <div class="dropdown" id="solomenu" onclick="dispMenu(this.id)">
+
         <div style="display: inline;"> 
             <div style="display: block; padding: 10px;"> Solo Projects</div>
             <div class="dropdownmenu">
@@ -76,7 +83,7 @@
             </div>
         </div> 
     </div>
-    <div class="dropdown">
+    <div class="dropdown" id="groupmenu" onclick="dispMenu(this.id)">
         <div style="display: inline;"> 
             <div style="display: block; padding: 10px;"> Group Projects</div>
             <div class="dropdownmenu">
