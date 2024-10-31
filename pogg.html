@@ -122,10 +122,10 @@
     <div class="col-md-5 statsbox">
         <h5 style="font-weight: bold";>Stats</h5>
         <ul>
-            <li>Language(s): Python (Flask Web App)</li>
-            <li>Date: Spring 2024</li>
-            <li>Main Role: Basic Implementation of RSA, Vigenere, 3DES</li>
-            <li>Overview: Cryptography web application incorporating basic encryption and decryption of text and files using four different encryption schemes</li>
+            <li>Language(s): Javascript (React) with HTML/CSS</li>
+            <li>Date: Fall 2023</li>
+            <li>Main Role: Match History and Individual Match functionality</li>
+            <li>Overview: Responsive React app utilizing the Riot API to visualize League of Legends statistics</li>
         </ul>
     </div>
     <div class="col-md-1">
@@ -133,7 +133,7 @@
     </div>
     <div class="col-md-6">
         <h5 style="font-weight: bold";>Description</h5>
-        <p>The Encryption Tool is a Flask web application that implements four different encryption schemes on text or files in order to provide file security. The encryption schemes available are Vigenere Cipher, RSA, Triple-DES, and AES encryption. Vigenere cipher is only available on text due to the nature of it, but the rest can be used on a text entry box or with files. As for the actual encryption and decryption, while many libraries exist that perform these features, we created our own functions to perform encryption and decryption in order to fully understand how each method works. While this does mean they may not be as efficient as something like a professional encryption tool, it means we also know exactly how each one works and ways they could be adjusted. Implementation of Vigenere was easy, and RSA was fairly simple, but learning in detail the processes of Triple DES and AES was a complicated but rewarding process, figuring out how to make each step smoothly transition into the next, whether forward or backward.</p>
+        <p>Based on a website called Op.gg (hence the name), Po.gg is a League of Legends stat tracker that gives information about games a player has played by utilizing the Riot Games API. Our application evolved from a basic mostly HTML page, to basic Javascript, and eventually to full-blown responsive React. It features a Match History page (as well as more stats for each match on this page), a Leaderboards tab, and an individual User Stats page. The use of the main functions of the site are also protected by a login - one must make an account to use them. I mainly worked on the Match History and individual Match page, which involved obtaining the entered name, getting the ID correlating to the name, and getting a list of match IDs. From these, further information about each match could be queried, and then parsed to obtain the most relevant information. A further breakdown of this is provided if the user clicks on a match in the match history page, with charts for the most important stats.</p>
     </div>
     
 </div>
@@ -142,8 +142,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12" style="text-align: center;">
-            <iframe style="display:block; margin:auto; padding-bottom: 50px;" width="100%" height="420%" src="https://www.youtube.com/embed/SwXWLXXFyXQ?si=oyDgVTsF_icmDvsp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+            <object class="pdf" style="display:block; margin:auto; padding-bottom: 50px;" width="100%" height="420%"
+            data="pogg.pdf" >
+    </object>        </div>
     </div>
 </div>
 
