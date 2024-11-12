@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+    <style>
+        body {
+            font-family: "Adamina";
+        }
+        .dropdownmenu {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            background-color: whitesmoke;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown:hover .dropdownmenu {
+            display: block;
+        }
+
+        .dropdownmenu a {
+            padding: 12px 16px;
+            display: block;
+        }
+
+        .theheader {
+            text-align: center;
+            margin: auto;
+            position: relative;
+        }
+        .theheader h1{
+            font-size: 100px;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: "Adamina";
+        }
+        .theheader p{
+            font-size: 25px;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: "Adamina";
+        }
+        .headtext {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .nav {
+            color: lightgray;
+        }
+
+        .statsbox {
+            background-color: lightgray;
+            padding: 50px;
+            text-align: left;
+        }
+        
+    </style>
+    </head>
+<body>
+
+
+<!-- Navbar -->
+<div class="container-fluid">
+    <div class="row">
+
+<div style="list-style-type: none; margin: 0; padding: 0; background-color: #474747; height: 5vh; min-height: 50px;" class="col-md-12 nav">
+
+    <script>
+        function dispMenu(theid) {
+            document.getElementById(theid).display = "block"
+        }
+    </script>
+
+    <div class="dropdown" id="solomenu" onclick="dispMenu(this.id)">
+
+        <div style="display: inline;"> 
+            <div style="display: block; padding: 10px;"> Solo Projects</div>
+            <div class="dropdownmenu">
+                <a href="study.html">ChatGPT Study</a>
+                <a href="niv.html">Deckbuilder</a>
+
+            </div>
+        </div> 
+    </div>
+    <div class="dropdown" id="groupmenu" onclick="dispMenu(this.id)">
+        <div style="display: inline;"> 
+            <div style="display: block; padding: 10px;"> Group Projects</div>
+            <div class="dropdownmenu">
+                <a href="research.html">S2E Lab</a>
+                <a href="golfinder.html">Golfinder</a>
+                <a href="crypto.html">Crypto Tool</a>
+                <a href="pogg.html">Po.gg</a>
+
+
+            </div>
+        </div> 
+    </div>
+    <!-- <div style="display: inline; float: right;"> <div style="display: block; padding: 10px; "> Group Projects</div></div> -->
+    
+    <div style="display: inline;"> <div style="display: block; padding: 10px;"> About Me</div></div>
+    <div style="display: inline;"> <div style="display: block; padding: 10px;"> Contact</div></div>
+    
+    <div style="display: inline; float: right; margin-left: 20%;"> <div style="display: block; padding: 10px;"> Website is a Work in Progress</div>
+</div>
+
+    </div>
+</div>
+<br>
+<div class="row">
+    <h5 class="col-md-12" style="text-align: center; margin: 5 auto; font-size:x-large;">Cryptography Tool</h5>
+</div>
+<br><br>
+
+<div class="container">
+<div class="row">
+    
+    <div class="col-md-5 statsbox">
+        <h5 style="font-weight: bold";>Stats</h5>
+        <ul>
+            <li>Language(s): Python (Flask Web App)</li>
+            <li>Date: Spring 2024</li>
+            <li>Main Role: Basic Implementation of RSA, Vigenere, 3DES</li>
+            <li>Overview: Cryptography web application incorporating basic encryption and decryption of text and files using four different encryption schemes</li>
+        </ul>
+    </div>
+    <div class="col-md-1">
+        <p></p>
+    </div>
+    <div class="col-md-6">
+        <h5 style="font-weight: bold";>Description</h5>
+        <p>The Encryption Tool is a Flask web application that implements four different encryption schemes on text or files in order to provide file security. The encryption schemes available are Vigenere Cipher, RSA, Triple-DES, and AES encryption. Vigenere cipher is only available on text due to the nature of it, but the rest can be used on a text entry box or with files. As for the actual encryption and decryption, while many libraries exist that perform these features, we created our own functions to perform encryption and decryption in order to fully understand how each method works. While this does mean they may not be as efficient as something like a professional encryption tool, it means we also know exactly how each one works and ways they could be adjusted. Implementation of Vigenere was easy, and RSA was fairly simple, but learning in detail the processes of Triple DES and AES was a complicated but rewarding process, figuring out how to make each step smoothly transition into the next, whether forward or backward.</p>
+    </div>
+    
+</div>
+</div>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12" style="text-align: center;">
+            <iframe style="display:block; margin:auto; padding-bottom: 50px;" width="100%" height="420%" src="https://www.youtube.com/embed/SwXWLXXFyXQ?si=oyDgVTsF_icmDvsp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+</html>
